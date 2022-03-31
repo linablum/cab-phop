@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Josefin+Sans:wght@100;350&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Register</title>
+  </head>
+  <body>
+    <nav>
+      <p>P-HOP</p>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/tours.html">Tours</a></li>
+        <li><a href="/register.html">Register</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="register">
+      <h1>Book a Tour</h1>
+      <div class="form">
+        <form action="">
+          <label for="firstname">First Name<span>*</span></label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Text"
+            minlength="2"
+            required
+          />
+          <label for="lastname">Last Name<span>*</span></label
+          ><input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Text"
+            minlength="2"
+            required
+          />
+          <label for="email">Email<span>*</span></label
+          ><input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Text"
+            required
+          />
+          <label for="date">Select Date<span>*</span></label
+          ><input
+            type="date"
+            name="date"
+            id="date"
+            value="2022-03-30"
+            required
+          />
+          <label for="tour">Select Tour<span>*</span></label
+          ><input list="tours" name="tours" id="tour" placeholder="" required />
+          <datalist id="tours">
+            <option value="Broke Quokka"></option>
+            <option value="Classy Quokka"></option>
+            <option value="Wicked Quokka"></option>
+          </datalist>
+          <label for="comment"
+            >Special requests? Anything you want to tell us?</label
+          ><textarea name="comment" id="comment" rows="6" cols="50">
+Text</textarea
+          >
+          <p>Receive marketing emails</p>
+          <label for="yes" class="radio">Yes</label
+          ><input type="radio" name="marketing" id="yes" value="yes" checked />
+          <label for="no" class="radio">No</label>
+          <input type="radio" name="marketing" id="no" value="yes" />
+          <div>
+            <h2 class="submit">Terms and conditions</h2>
+            <p>
+              All participants are responsible for their own safety and
+              well-being during the event. P-Hop will do its best to ensure that
+              participants safely attend a variety of localities and venues
+              within Berlin.
+            </p>
+            <p>
+              P-Hop reserves the right to cancel a tour at our discretion and
+              for any reason. In the event of a cancellation, P-Hop will try to
+              contact distributors and clients as quickly as possible and will
+              refund or replace tickets where appropriate.
+            </p>
+            <p>
+              All participants should be aware of their own physical or mental
+              limitations before attending an event.
+            </p>
+            <input type="checkbox" name="terms" id="terms" required /><label
+              for="terms"
+              class="radio"
+              >I agree to the terms</label
+            >
+          </div>
+          <div class="submit">
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>© P-HOP 2022.</p>
+      <p>All Rights Reserved. Privacy Policy</p>
+    </footer>
+  </body>
+</html>
